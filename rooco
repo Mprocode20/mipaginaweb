@@ -1,90 +1,16 @@
-:root {
-  --bg-light: #ffffff;
-  --bg-creme: #fcfaf7;
-  --brick: #a64d32;
-  --gold: #d4af37;
-  --text-dark: #3a2a24;
-  --text-muted: #70605a;
-  --white: #ffffff;
-  --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
+ // Animación de aparición suave
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = 1;
+            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transition = 'all 0.6s ease-out';
+        }
+    });
+});
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--bg-creme);
-  color: var(--text-dark);
-  line-height: 1.6;
-  overflow-x: hidden;
-}
-
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
-
-/* Hero Section */
-.hero {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), 
-              url('attached_assets/unnamed_(7)_1768516009946.webp');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border-bottom: 2px solid var(--gold);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  color: var(--brick);
-  letter-spacing: 3px;
-  font-weight: 900;
-  font-size: 1.5rem;
-}
-
-.btn-reserve {
-  text-decoration: none;
-  padding: 8px 20px;
-  border-radius: 4px;
-  font-weight: bold;
-  color: var(--white);
-  background: var(--brick);
-  transition: var(--transition);
-  font-size: 0.9rem;
-}
-
-/* Media Queries para Móviles */
-@media (max-width: 768px) {
-  .hero-content h1 { font-size: 2.5rem; }
-  .cards { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: 1fr; }
-  .info-container { grid-template-columns: 1fr; }
-}
-
-/* Estilos Desktop */
-@media (min-width: 768px) {
-  .hero-content h1 { font-size: 4rem; }
-  .cards { grid-template-columns: repeat(3, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(3, 1fr); }
-  .info-container { grid-template-columns: 1fr 1fr; }
-}
+document.querySelectorAll('.card').forEach(card => {
+    card.style.opacity = 0;
+    card.style.transform = 'translateY(30px)';
+    observer.observe(card);
+});
