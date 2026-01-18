@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rococo Gourmet | Clásico & Elegante</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <h2 class="logo">ROCOCO</h2>
+        <div class="nav-right">
+            <span class="phone-nav">0414-1913056</span>
+            <a href="#contacto" class="btn-reserve">Reservar</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="reveal-text">Bienvenidos a Casa</span>
+            <h1>Elegancia en cada detalle</h1>
+            <p>Descubre un ambiente cálido inspirado en el ladrillo rústico y el arte clásico de nuestro local en Maturín.</p>
+            <a href="#experiencia" class="btn-primary">Explorar</a>
+        </div>
+    </header>
+
+    <section id="historia" class="services">
+        <h2 class="section-title">Nuestra Esencia</h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 40px; color: var(--text-muted);">
+            En Rococo Gourmet, cada rincón está diseñado para contar una historia. Desde nuestras paredes de ladrillo visto hasta los detalles dorados que adornan nuestro salón, buscamos ofrecerte una experiencia que trascienda lo culinario.
+        </p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/unnamed_(1)_1768515587439.webp" alt="Burger Gourmet">
+                </div>
+                <h3>Gastronomía Real</h3>
+                <p>Sabores auténticos servidos en un entorno que respira historia y arte.</p>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/gourmet_1768515475218.webp" alt="Postre Especial">
+                </div>
+                <h3>Dulce Tradición</h3>
+                <p>Postres artesanales que combinan la técnica moderna con el alma de Rococo.</p>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/unnamed_(8)_1768516022852.webp" alt="Ambiente">
+                </div>
+                <h3>El Local</h3>
+                <p>Un espacio diseñado para que te sientas en casa, rodeado de detalles únicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiencia" class="services" style="background: var(--white);">
+        <h2 class="section-title">Momentos Rococo</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/unnamed_1768515560352.webp" alt="Especialidad">
+                </div>
+                <h3>Texturas</h3>
+                <p>Capas de sabor diseñadas para sorprender a los paladares más exigentes.</p>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/unnamed_(6)_1768515569683.webp" alt="Dulce">
+                </div>
+                <h3>Innovación</h3>
+                <p>Técnicas modernas aplicadas a la repostería clásica artesanal.</p>
+            </div>
+            <div class="card">
+                <div class="card-img-wrapper">
+                    <img src="attached_assets/unnamed_(4)_1768515582512.webp" alt="Desayuno">
+                </div>
+                <h3>Frescura</h3>
+                <p>Ingredientes seleccionados diariamente para garantizar la mejor calidad.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-grid">
+        <div class="grid-item"><img src="attached_assets/unnamed_(7)_1768516009946.webp" alt="Rococo Interior"></div>
+        <div class="grid-item"><img src="attached_assets/unnamed_(9)_1768516015347.webp" alt="Rococo Terraza"></div>
+        <div class="grid-item"><img src="attached_assets/unnamed_(8)_1768516022852.webp" alt="Rococo Fachada"></div>
+        <div class="grid-item"><img src="attached_assets/unnamed_(5)_1768515575736.webp" alt="Pasta Rococo"></div>
+    </section>
+
+    <section id="contacto" class="inspiration">
+        <div class="info-container">
+            <div class="info-block">
+                <h3>Visítanos</h3>
+                <p>📞 0414-1913056</p>
+                <p>📍 PRR2+9MC, Maturín 6201, Monagas</p>
+                <p style="margin-top: 15px; font-style: italic; color: var(--brick); font-weight: 600;">"Este lugar siempre será tu casa"</p>
+            </div>
+            <div class="info-block">
+                <h3>Horarios</h3>
+                <div class="schedule">
+                    <p><span>Lunes:</span> <span>8 AM – 8 PM</span></p>
+                    <p><span>Martes:</span> <span>8 AM – 8 PM</span></p>
+                    <p><span>Miércoles:</span> <span class="closed">Cerrado</span></p>
+                    <p><span>Jueves:</span> <span>8 AM – 8 PM</span></p>
+                    <p><span>Viernes:</span> <span>8:30 AM – 10 PM</span></p>
+                    <p><span>Sábado:</span> <span>8:30 AM – 10 PM</span></p>
+                    <p><span>Domingo:</span> <span>8:30 AM – 8 PM</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Rococo Gourmet. La elegancia de lo auténtico en Maturín.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
